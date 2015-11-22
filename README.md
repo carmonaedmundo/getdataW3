@@ -2,21 +2,12 @@
 title: "README.md"
 author: "Edmundo Carmona"
 date: "21 de noviembre de 2015"
-output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This repo contains the script, code book and the tidy data file from the Getting and Cleaning Data Course Project
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+The file run_analysis contains the script to solve from the part 1 to 5, each part has its own tidy data data.table called tidy_data1 for part 1 tidy_data2 for part 2 and so on
 
-```{r}
-summary(cars)
-```
+The file tidy_data.txt contains the result of part 5
 
-You can also embed plots, for example:
-
-```{r, echo=FALSE}
-plot(cars)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+the file CodeBook.md contains an explanation of each column and has to be readed along with the tidy_data.txt
