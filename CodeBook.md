@@ -14,10 +14,13 @@ The Tidy_data.txt file Dictionary
         4 SITTING
         5 STANDING
         6 LAYING
+
 "ActivityCode"
       This field contains the activity code number from 1 to 6
+
 "Subject"
       An identifier of the subject who carried out the experiment.
+
  Variables 
     columns from 4 to 82 contains the values of the variables
  [4]"tBodyAcc-mean()-X"              
