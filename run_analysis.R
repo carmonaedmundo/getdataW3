@@ -16,4 +16,6 @@ tidy_data2<-select(tidy_data,grep('V1|mean|std',names(tidy_data)))
 activity_labels<-read.table("activity_labels.txt",stringsAsFactors = F)
 tidy_data3<-merge(tidy_data2,activity_labels,by.x = "activity.V1",by.y = "V1")
 tidy_data4<-rename(tidy_data3,ActivityName=V2,ActivityCode=activity.V1,Subject=subject.V1)
-tidy_data5<-group_by(tidy_data4,ActivityCode,Subject)
+?summarise_each
+ 
+tidy_data5<-tidy_data4 %>% group_by(ActivityName,ActivityCode,Subject)%>% summarize_each(funs(mean))
